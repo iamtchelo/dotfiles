@@ -12,7 +12,7 @@
 #     VERSION: 1.1
 #========================================================================================================
 
-#uname -r 
+#uname -r
 #ls /boot | grep vmlinuz | cut -d'-' -f2,3
 #dpkg -l |grep ^ii| grep 4.4.0-34|awk -F' ' '{ print $2 }'|xargs -I % sh -c 'echo sudo apt remove -y %'
 

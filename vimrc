@@ -12,8 +12,6 @@ syntax on
 set backupdir=~/.backup//
 set directory=~/.backup//
 
-iab gmg Guilherme Mangabeira Gregio<guilherme@gregio.net>
-
 "......................................................................ARQUIVO
 "" Sai fora na marra!
 imap <F12> <esc>:wqa!<cr>

@@ -2,7 +2,7 @@
 Meus Dotfiles
 
 ```sh
-curl -L https://raw.githubusercontent.com/guilhermegregio/dotfiles/master/install.sh | bash
+curl -L https://raw.githubusercontent.com/iamtchelo/dotfiles/master/install.sh | bash
 ```
 
 

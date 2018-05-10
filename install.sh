@@ -1,9 +1,9 @@
 #!/usr/bin/env bash
-set -e 
+set -e
 
 TIMESTAMP=$(date +%s);
 dotfilespath="$HOME/dotfiles"
-dotrepo="https://github.com/guilhermegregio/dotfiles.git"
+dotrepo="https://github.com/iamtchelo/dotfiles"
 
 if [ ! -d "$dotfilespath" ]; then
     printf "Fetching dotfiles...\n"
@@ -23,7 +23,7 @@ done
 
 echo "Configuring .dotfiles"
 find $dotfilespath/* -maxdepth 0 -type f -not -name "install.sh" -not -name "LICENSE" -not -name "README.md" | while read FILE; do
-	rm -f "$HOME/.${FILE##*/}"	
+	rm -f "$HOME/.${FILE##*/}"
 	ln -s "$FILE" "$HOME/.${FILE##*/}"
 done
 
